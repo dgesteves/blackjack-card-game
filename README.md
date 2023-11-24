@@ -23,6 +23,14 @@ Write tests to ensure the functionality of your code. Test coverage is essential
 Create clean and maintainable code focusing on object-oriented programming (OOP) principles.
 Use proper code organisation and comments to make your code easy to understand.
 
+### Demo
+
+### Test Coverage
+
+#### Client
+
+#### Server
+
 ## Getting Started
 
 ### Prerequisites
