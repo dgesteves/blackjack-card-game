@@ -1,0 +1,25 @@
+header section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  margin-left: 6px;
+}
+
+header section img {
+  width: 24px;
+  height: 24px;
+}
+
+#logo-jack {
+  transform: rotate(-35deg) translateX(6px) translateY(6px);
+}
+
+#logo-ace {
+  transform: rotate(35deg) translateX(-6px) translateY(6px);
+}
+
+header section h1 {
+  font-size: 20px;
+  font-weight: 500;
+}

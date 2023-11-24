@@ -1,0 +1,34 @@
+button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  height: 40px;
+  background-color: var(--purple600);
+  border: 1px solid var(--purple500);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: var(--purple500);
+  border-color: var(--purple500);
+}
+
+button:active {
+  background-color: var(--purple700);
+  border-color: var(--purple600);
+}
+
+button:disabled {
+  background-color: var(--purple900);
+  border-color: var(--purple800);
+  color: var(--purple600);
+  pointer-events: none;
+}
+
+#start-game {
+  margin-right: 12px;
+}

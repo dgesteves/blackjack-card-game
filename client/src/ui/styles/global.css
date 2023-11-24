@@ -1,0 +1,105 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --white: #ffffff;
+  --grayIron100: #f4f4f5;
+  --grayIron200: #e4e4e7;
+  --grayIron300: #d1d1d6;
+  --grayIron400: #a0a0ab;
+  --grayIron500: #70707b;
+  --grayIron600: #51525c;
+  --grayIron700: #3f3f46;
+  --grayIron750: #323338;
+  --grayIron800: #26272b;
+  --grayIron900: #18181b;
+  --purple25: #fafaff;
+  --purple50: #f4f3ff;
+  --purple100: #ebe9fe;
+  --purple200: #d9d6fe;
+  --purple300: #bdb4fe;
+  --purple400: #9b8afb;
+  --purple500: #7a5af8;
+  --purple600: #6938ef;
+  --purple700: #5925dc;
+  --purple800: #4b2c9a;
+  --purple900: #412b7b;
+  --red500: #bf0c21;
+  --red600: #a1081a;
+  --red900: #760412;
+  --systemRed: #ff344c;
+  --systemGreen: #38d9a9;
+  --systemGray: #a0a0ab;
+  --systemPurple: #9b8afb;
+  --dataFuchsia: #ff77d1;
+  --dataTangerine: #ffac60;
+  --dataSea: #3cc4ff;
+  --dataLemon: #fff971;
+  --dataEmerald: #12b76a;
+  --dataMustard: #9f7a5e;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  z-index: 1;
+  position: relative;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 16px;
+  background-color: var(--grayIron800);
+  color: var(--white);
+}
+
+img,
+picture,
+video,
+canvas,
+svg,
+input,
+button,
+textarea,
+select {
+  display: block;
+  max-width: 100%;
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}

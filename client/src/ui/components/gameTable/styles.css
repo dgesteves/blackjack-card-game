@@ -1,0 +1,27 @@
+#dealer-hand {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#dealer-hand img {
+  height: 150px;
+}
+
+#result {
+  font-size: 32px;
+  font-weight: normal;
+  color: var(--white);
+}
+
+#player-hand {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#player-hand img {
+  height: 150px;
+}

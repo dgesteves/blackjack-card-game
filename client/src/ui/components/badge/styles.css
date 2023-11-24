@@ -1,0 +1,79 @@
+.badge {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+  height: 40px;
+  background: rgba(122, 90, 248, 0.2);
+  border: 1px solid transparent;
+  border-radius: 36px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: capitalize;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  color: var(--systemPurple);
+}
+
+.badge[data-color='dataFuchsia'] {
+  background: rgba(255, 119, 209, 0.2);
+  border-color: transparent;
+  color: var(--dataFuchsia);
+}
+
+.badge[data-color='dataTangerine'] {
+  background: rgba(255, 172, 96, 0.2);
+  border-color: transparent;
+  color: var(--dataTangerine);
+}
+
+.badge[data-color='dataSea'] {
+  background: rgba(60, 196, 255, 0.2);
+  border-color: transparent;
+  color: var(--dataSea);
+}
+
+.badge[data-color='dataLemon'] {
+  background: rgba(255, 249, 113, 0.2);
+  border-color: transparent;
+  color: var(--dataLemon);
+}
+
+.badge[data-color='dataEmerald'] {
+  background: rgba(0, 255, 0, 0.2);
+  border-color: transparent;
+  color: var(--dataEmerald);
+}
+
+.badge[data-color='dataMustard'] {
+  background: rgba(159, 122, 94, 0.2);
+  border-color: transparent;
+  color: var(--dataMustard);
+}
+
+.badge[data-color='systemRed'] {
+  background: rgba(255, 107, 132, 0.2);
+  border-color: transparent;
+  color: var(--systemRed);
+}
+
+.badge[data-color='systemGreen'] {
+  background: rgba(56, 217, 169, 0.2);
+  border-color: transparent;
+  color: var(--systemGreen);
+}
+
+.badge[data-color='systemGray'] {
+  background: rgba(112, 112, 123, 0.2);
+  border-color: transparent;
+  color: var(--systemGray);
+}
+
+.badge[data-color='systemPurple'] {
+  background: rgba(122, 90, 248, 0.2);
+  border-color: transparent;
+  color: var(--systemPurple);
+}
