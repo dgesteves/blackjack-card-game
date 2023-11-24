@@ -10,7 +10,8 @@
     "lint": "eslint --ext .ts .",
     "format": "prettier --write src/**/*.{ts,css}",
     "test": "vitest",
-    "coverage": "vitest --coverage"
+    "coverage": "vitest --coverage",
+    "docs": "typedoc --entryPointStrategy expand --exclude '**/*.test.ts' --out docs src"
   },
   "devDependencies": {
     "@types/jsdom": "^21.1.6",
@@ -20,6 +21,7 @@
     "eslint": "^8.54.0",
     "jsdom": "^22.1.0",
     "prettier": "^3.1.0",
+    "typedoc": "^0.25.3",
     "typescript": "^5.2.2",
     "vite": "^5.0.0",
     "vite-plugin-eslint": "^1.8.1",

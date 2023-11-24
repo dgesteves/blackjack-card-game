@@ -9,7 +9,8 @@
     "format": "nx format:write",
     "test": "nx test",
     "test-watch": "nx test --watch",
-    "coverage": "nx test --coverage"
+    "coverage": "nx test --coverage",
+    "docs": "typedoc --entryPointStrategy expand --exclude '**/*.test.ts' --out docs src"
   },
   "private": true,
   "dependencies": {
@@ -45,6 +46,7 @@
     "supertest": "^6.3.3",
     "ts-jest": "^29.1.0",
     "ts-node": "10.9.1",
+    "typedoc": "^0.25.3",
     "typescript": "~5.2.2"
   }
 }
