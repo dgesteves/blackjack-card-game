@@ -27,7 +27,8 @@ Use proper code organisation and comments to make your code easy to understand.
 <img width="1405" alt="Screenshot 2023-11-24 at 19 37 20" src="https://github.com/dgesteves/blackjack-card-game/assets/34245953/141c59f7-2e2b-4de6-ac42-14f5b9c8a633">
 
 
-https://github.com/dgesteves/blackjack-card-game/assets/34245953/77798b41-72f1-47a9-aae2-7b172363d696
+https://github.com/dgesteves/blackjack-card-game/assets/34245953/730fbef7-9ff3-4a40-8c67-edb747fb553d
+
 
 
 ### Test Coverage
