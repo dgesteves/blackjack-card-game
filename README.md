@@ -34,9 +34,10 @@ https://github.com/dgesteves/blackjack-card-game/assets/34245953/77798b41-72f1-4
 
 #### Client
 <img width="785" alt="Screenshot 2023-11-24 at 19 43 25" src="https://github.com/dgesteves/blackjack-card-game/assets/34245953/1899fc23-2449-40c7-b866-46a6951e4d06">
+<img width="1295" alt="Screenshot 2023-11-24 at 19 47 10" src="https://github.com/dgesteves/blackjack-card-game/assets/34245953/9ccc715f-0c64-4a3d-8d45-941ce0f8e627">
 
 #### Server
-<img width="1295" alt="Screenshot 2023-11-24 at 19 47 10" src="https://github.com/dgesteves/blackjack-card-game/assets/34245953/9ccc715f-0c64-4a3d-8d45-941ce0f8e627">
+<img width="1290" alt="Screenshot 2023-11-24 at 19 52 52" src="https://github.com/dgesteves/blackjack-card-game/assets/34245953/314549c2-60ad-4a17-bd52-c0f8a68fb90b">
 
 ## Getting Started
 
