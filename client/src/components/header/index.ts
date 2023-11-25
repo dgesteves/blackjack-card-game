@@ -39,7 +39,7 @@ export function setupHeader(element: HTMLElement) {
     selector: '#logo-jack',
     type: 'img',
     id: 'logo-jack',
-    src: 'src/assets/images/J_Spades.svg',
+    src: '/src/assets/images/J_Spades.svg',
     alt: 'jack_spade',
   });
   setupElement({
@@ -47,7 +47,7 @@ export function setupHeader(element: HTMLElement) {
     selector: '#logo-ace',
     type: 'img',
     id: 'logo-ace',
-    src: 'src/assets/images/A_Spades.svg',
+    src: '/src/assets/images/A_Spades.svg',
     alt: 'ace_spade',
   });
 

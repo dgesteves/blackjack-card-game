@@ -14,14 +14,6 @@ export function setupGameTable(element: HTMLElement) {
   if (!element) return;
 
   /**
-   * All div elements that are children of the parent element are removed.
-   */
-  ['div'].forEach((selector) => {
-    const elements = element.querySelectorAll(selector);
-    elements.forEach((el) => el.remove());
-  });
-
-  /**
    * The dealer hand div element is created and setup with the following properties:
    * - parent: The parent element to which the div element will be appended.
    * - selector: The selector of the div element. If a div element with this selector already exists as a child of the parent, it is removed.

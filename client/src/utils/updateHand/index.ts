@@ -13,12 +13,12 @@ export function updateHand(elementId: string, hand: Card[], winner?: string) {
   if (element) {
     element.innerHTML =
       elementId === DEALER_HAND_ID && !winner
-        ? `<img src="src/assets/images/back.svg" alt="Card turn back" />`
+        ? `<img src="/src/assets/images/back.svg" alt="Card turn back" />`
         : '';
     element.innerHTML += hand
       .map(
         (card) =>
-          `<img src="src/assets/images/${card.rank}_${card.suit}.svg" alt="${card.rank} of ${card.suit}" />`,
+          `<img src="/src/assets/images/${card.rank}_${card.suit}.svg" alt="${card.rank} of ${card.suit}" />`,
       )
       .join('');
   }

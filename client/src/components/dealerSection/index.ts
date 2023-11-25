@@ -24,7 +24,7 @@ export function setupDealerSection(element: HTMLElement) {
     parent: element,
     selector: '#dealer-img',
     type: 'img',
-    src: 'src/assets/images/dealer.svg',
+    src: '/src/assets/images/dealer.svg',
     alt: 'Dealer',
   });
 

@@ -1,7 +1,7 @@
 import './styles.css';
-import { setupGameTable } from '../gameTable';
-import { setupDealerSection } from '../dealerSection';
-import { setupPlayerSection } from '../playerSection';
+import {setupGameTable} from '../gameTable';
+import {setupDealerSection} from '../dealerSection';
+import {setupPlayerSection} from '../playerSection';
 
 /**
  * Sets up the game section of the game.
@@ -10,29 +10,30 @@ import { setupPlayerSection } from '../playerSection';
  * @param {HTMLElement} element - The parent element to which the game section elements will be appended.
  */
 export function setupGameSection(element: HTMLElement) {
-  if (!element) return;
+    if (!element) return;
 
-  ['dealer-section', 'gameTable-section', 'player-section'].forEach((id) => {
-    const existingSection = element.querySelector(`#${id}`);
-    existingSection?.remove();
+    /**
+     * An object mapping section ids to their corresponding setup functions.
+     */
+    const sections: { [key: string]: (element: HTMLElement) => void } = {
+        'dealer-section': setupDealerSection,
+        'gameTable-section': setupGameTable,
+        'player-section': setupPlayerSection
+    };
 
-    const newSection = document.createElement('section');
-    newSection.id = id;
-    element.append(newSection);
+    /**
+     * For each section id, remove the existing section with that id (if it exists),
+     * create a new section with that id, append it to the parent element,
+     * and call the corresponding setup function.
+     */
+    Object.keys(sections).forEach((id) => {
+        const existingSection = element.querySelector(`#${id}`);
+        existingSection?.remove();
 
-    switch (id) {
-      case 'dealer-section':
-        // Set up the dealer section
-        setupDealerSection(newSection);
-        break;
-      case 'gameTable-section':
-        // Set up the game table section
-        setupGameTable(newSection);
-        break;
-      case 'player-section':
-        // Set up the player section
-        setupPlayerSection(newSection);
-        break;
-    }
-  });
+        const newSection = document.createElement('section');
+        newSection.id = id;
+        element.append(newSection);
+
+        sections[id](newSection);
+    });
 }

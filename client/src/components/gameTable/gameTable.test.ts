@@ -53,7 +53,7 @@ describe('setupGameTable', () => {
 
     const appendedDivs = container.querySelectorAll('div');
 
-    expect(appendedDivs.length).toEqual(3);
+    expect(appendedDivs.length).toEqual(4);
   });
 
   it('should create divs with the correct IDs', () => {

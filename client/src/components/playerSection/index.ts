@@ -63,8 +63,8 @@ export function setupPlayerSection(element: HTMLElement) {
   setupBadge(playerPointsBadge, 'Player Points');
 
   // The hit button is setup with the text 'Hit' and an action to perform when clicked.
-  setupButton(hitButton, 'Hit', () => performAction(createHit));
+  setupButton(hitButton, 'Hit', () => performAction(createHit), 'disabled');
 
   // The stand button is setup with the text 'Stand' and an action to perform when clicked.
-  setupButton(standButton, 'Stand', () => performAction(createStand));
+  setupButton(standButton, 'Stand', () => performAction(createStand), 'disabled');
 }
