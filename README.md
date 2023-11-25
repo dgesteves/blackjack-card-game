@@ -34,11 +34,16 @@ https://github.com/dgesteves/blackjack-card-game/assets/34245953/730fbef7-9ff3-4
 ### Test Coverage
 
 #### Client
-<img width="799" alt="Screenshot 2023-11-24 at 22 37 09" src="https://github.com/dgesteves/blackjack-card-game/assets/34245953/9c4d9d5e-3e3e-4860-a0cf-4584878e003d">
-<img width="1617" alt="Screenshot 2023-11-24 at 22 39 13" src="https://github.com/dgesteves/blackjack-card-game/assets/34245953/7020c967-f7c0-4212-9491-aeffc70cddc5">
+
+<img width="816" alt="Screenshot 2023-11-25 at 20 32 53" src="https://github.com/dgesteves/blackjack-card-game/assets/34245953/66aba640-4e19-46d7-a637-c16602259a35">
+
+<img width="1376" alt="Screenshot 2023-11-25 at 20 36 06" src="https://github.com/dgesteves/blackjack-card-game/assets/34245953/3e7c3fd9-984a-454b-9d97-51d66b4db4ef">
 
 #### Server
-<img width="1290" alt="Screenshot 2023-11-24 at 19 52 52" src="https://github.com/dgesteves/blackjack-card-game/assets/34245953/314549c2-60ad-4a17-bd52-c0f8a68fb90b">
+
+<img width="891" alt="Screenshot 2023-11-25 at 20 41 27" src="https://github.com/dgesteves/blackjack-card-game/assets/34245953/89860214-7ccc-4c7b-b66a-4b807347f40a">
+
+<img width="1376" alt="Screenshot 2023-11-25 at 20 38 40" src="https://github.com/dgesteves/blackjack-card-game/assets/34245953/a98a0382-10af-444f-8610-4329ee75915f">
 
 ## Getting Started
 
