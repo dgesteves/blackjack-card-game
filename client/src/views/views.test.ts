@@ -1,13 +1,13 @@
 import { expect, vi, describe, beforeEach, it } from 'vitest';
 import { setupView } from '.';
-import { setupHeader } from '../ui/components/header';
-import { setupGameSection } from '../ui/components/gameSection';
+import { setupHeader } from '../components/header';
+import { setupGameSection } from '../components/gameSection';
 
-vi.mock('../ui/components/header', () => ({
+vi.mock('../components/header', () => ({
   setupHeader: vi.fn(),
 }));
 
-vi.mock('../ui/components/gameSection', () => ({
+vi.mock('../components/gameSection', () => ({
   setupGameSection: vi.fn(),
 }));
 

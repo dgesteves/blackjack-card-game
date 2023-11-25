@@ -1,4 +1,4 @@
-import './ui/styles/global.css';
+import './assets/styles/global.css';
 import { setupView } from './views';
 import { APP_ID } from './constants';
 

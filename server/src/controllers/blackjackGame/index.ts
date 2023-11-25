@@ -109,10 +109,8 @@ export class BlackjackGame {
     let points = hand.reduce((total, card) => total + card.value, 0);
 
     // If the hand contains an Ace and the points exceed 21, subtract 10 points
-    for (const card of hand) {
-      if (card.rank === 'A' && points > 21) {
-        points -= 10;
-      }
+    if (points > 21 && hand.some((card) => card.rank === 'A')) {
+      points -= 10;
     }
 
     // Return the final points

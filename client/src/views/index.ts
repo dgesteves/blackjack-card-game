@@ -1,7 +1,7 @@
 import './styles.css';
 import { GAME_SECTION_ID, HEADER_ID } from '../constants';
-import { setupHeader } from '../ui/components/header';
-import { setupGameSection } from '../ui/components/gameSection';
+import { setupHeader } from '../components/header';
+import { setupGameSection } from '../components/gameSection';
 
 /**
  * Sets up the main view of the application.

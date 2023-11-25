@@ -48,3 +48,15 @@ export type GameState = {
   dealerPoints: number;
   winner?: string;
 };
+
+export type SetupElement = {
+  parent: HTMLElement;
+  selector: string;
+  type: string;
+  id?: string;
+  src?: string;
+  alt?: string;
+  className?: string;
+  color?: string;
+  textContent?: string;
+};

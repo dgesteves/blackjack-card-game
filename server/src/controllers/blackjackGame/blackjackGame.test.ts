@@ -1,5 +1,5 @@
 import { BlackjackGame } from '.';
-import { Rank, Suit } from '../../types';
+import {GameState, Rank, Suit} from '../../types';
 import { Card } from '../card';
 
 describe('BlackjackGame', () => {
@@ -73,5 +73,44 @@ describe('BlackjackGame', () => {
     game.calculatePoints();
     game.stand();
     expect(game.determineWinner()).toBe('Player');
+  });
+
+  it('should end the game with player as winner if dealer hits and points exceed 21', () => {
+    game.startGame();
+    game.dealerHand = [
+      new Card(Suit.Hearts, Rank.King),
+      new Card(Suit.Diamonds, Rank.Five),
+    ];
+    game.calculatePoints();
+    // Mock the deck to return a card with value 10
+    jest
+      .spyOn(game.deck, 'dealCard')
+      .mockReturnValue(new Card(Suit.Clubs, Rank.King));
+    const gameState = game.stand();
+    expect(gameState.winner).toBe('Player');
+  });
+
+  it('should end the game with dealer as winner if player hits and points exceed 21', () => {
+    game.startGame();
+    // Mock the deck to return cards with value 10
+    jest
+      .spyOn(game.deck, 'dealCard')
+      .mockReturnValue(new Card(Suit.Clubs, Rank.King));
+    let gameState:GameState;
+    while (game.playerPoints <= 21) {
+      gameState = game.hit();
+    }
+    expect(gameState.winner).toBe('Dealer');
+  });
+
+  it('should correctly calculate points when hand contains an Ace and points exceed 21', () => {
+    game.startGame();
+    game.playerHand = [
+      new Card(Suit.Hearts, Rank.Ace),
+      new Card(Suit.Diamonds, Rank.King),
+      new Card(Suit.Clubs, Rank.Four),
+    ];
+    game.calculatePoints();
+    expect(game.playerPoints).toBe(15);
   });
 });
