@@ -1,7 +1,7 @@
 # Blackjack Card Game
 
 ## Description
-This project consists of a server and a client. The server is built with Express and the client uses TypeScript.
+This project consists of a server and a client. The server(OOP paradigm) is built with Express and the client(Functional paradigm) uses TypeScript.
 
 ### Task
 Create a Blackjack card game that adheres to the following rules:
