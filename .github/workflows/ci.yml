@@ -17,15 +17,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'npm'
-
       - name: Debug directory contents
         run: |
           ls -al
+          echo "Matrix Package: ${{ matrix.package }}"
           ls -al ./${{ matrix.package }}
 
       - name: Check for package-lock.json
@@ -34,6 +29,12 @@ jobs:
             echo "Error: package-lock.json not found in ./${{ matrix.package }}."
             exit 1
           fi
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
 
       - name: Install dependencies and run scripts
         run: |
