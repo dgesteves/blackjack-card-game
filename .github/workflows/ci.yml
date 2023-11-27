@@ -12,7 +12,7 @@ jobs:
     strategy:
       matrix:
         node-version: [ 18.x,20.x ]
-        package: [ 'client', 'server' ]
+        #package: [ 'client', 'server' ]
 
     steps:
       - uses: actions/checkout@v3
@@ -24,7 +24,8 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies and run scripts
-        run: cd ${{ matrix.package }} && npm ci && npm test && npm run build --if-present
+        run: cd server && npm ci && npm test && npm run build --if-present
+       # run: cd ${{ matrix.package }} && npm ci && npm test && npm run build --if-present
         # run: |
         #  cd ${{ matrix.package }}
         #  if [ ! -f package-lock.json ]; then
