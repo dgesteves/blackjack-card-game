@@ -11,8 +11,8 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [ 18.x,20.x ]
-        package: [ 'client', 'server' ]
+        node-version: [18.x, 20.x]
+        package: ['client', 'server']
 
     steps:
       - uses: actions/checkout@v3
@@ -24,7 +24,16 @@ jobs:
           cache: 'npm'
 
       - name: Debug directory contents
-        run: ls -al ${{ matrix.package }}
+        run: |
+          ls -al
+          ls -al ${{ matrix.package }}
+
+      - name: Check for package-lock.json
+        run: |
+          if [ ! -f "${{ matrix.package }}/package-lock.json" ]; then
+            echo "Error: package-lock.json not found in ${{ matrix.package }}."
+            exit 1
+          fi
 
       - name: Install dependencies and run scripts
         run: |
@@ -32,7 +41,6 @@ jobs:
           npm ci
           npm test
           npm run build --if-present
-    
-    
-
-    #run: cd server && npm ci && npm test && npm run build --if-present
+        cache:
+          paths:
+            - '${{ matrix.package }}/node_modules'
