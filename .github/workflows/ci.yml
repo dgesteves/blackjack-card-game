@@ -41,6 +41,3 @@ jobs:
           npm ci
           npm test
           npm run build --if-present
-        cache:
-          paths:
-            - '${{ matrix.package }}/node_modules'
