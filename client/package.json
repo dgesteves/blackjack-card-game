@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "lint": "eslint --ext .ts .",
     "format": "prettier --write src/**/*.{ts,css}",
-    "test": "vitest",
+    "test": "vitest --watch=false",
+    "test-watch": "vitest --watch",
     "coverage": "vitest --coverage",
     "docs": "typedoc --entryPointStrategy expand --exclude '**/*.test.ts' --out docs src"
   },
