@@ -26,6 +26,10 @@ jobs:
       - name: Install dependencies and run scripts
         run: |
           cd ${{ matrix.package }}
+          if [ ! -f package-lock.json ]; then
+            echo "package-lock.json not found in ${{ matrix.package }} directory!"
+            exit 1
+          fi
           npm ci
           npm test
           npm run build --if-present
