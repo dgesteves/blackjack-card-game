@@ -26,18 +26,18 @@ jobs:
       - name: Debug directory contents
         run: |
           ls -al
-          ls -al ${{ matrix.package }}
+          ls -al ./${{ matrix.package }}
 
       - name: Check for package-lock.json
         run: |
-          if [ ! -f "${{ matrix.package }}/package-lock.json" ]; then
-            echo "Error: package-lock.json not found in ${{ matrix.package }}."
+          if [ ! -f "./${{ matrix.package }}/package-lock.json" ]; then
+            echo "Error: package-lock.json not found in ./${{ matrix.package }}."
             exit 1
           fi
 
       - name: Install dependencies and run scripts
         run: |
-          cd ${{ matrix.package }}
+          cd ./${{ matrix.package }}
           npm ci
           npm test
           npm run build --if-present
